@@ -55,5 +55,5 @@ Your task, should you choose to accept it, is: create a web-based application wh
 
 ##Improvement:
 
-    *Using mashape api for getting the news item details that receive request data single news_id and return response details of that particular news_id. This is not optimised because for getting the details for list of news_id have to call the server again and again(iteratively).for this we can make own api using xpath & scrapy python library(used for scrape web page) that receive news_id as list and return details of all news_id in single call.*
+*Using mashape api for getting the news item details that receive request data single news_id and return response details of that particular news_id. This is not optimised because for getting the details for list of news_id have to call the server again and again(iteratively).for this we can make own api using xpath & scrapy python library(used for scrape web page) that receive news_id as list and return details of all news_id in single call.*
 

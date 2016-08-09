@@ -1,12 +1,12 @@
-##################################################### 
-**Problem Statement:**
+#########################################################################################################################################
+##Problem Statement:
 
-  HackerNews (HN) is an extremely popular news aggregator site (just in case you haven’t been there, do give it a try!).
+  HackerNews (HN) is an extremely popular news aggregator site (just in case you haven’t been there, do give it a try!!!).
   The way this site functions is pretty straight-forward:
   
   * People find interesting links.
   * They post it on Hacker News.
-  * Others who like the content on the linked site upvote the posting and can also comment on it.
+  * Others who like the content on the linked site upvote the posting and can do the comment also.
   * There’s an algorithm which measures the “importance” of a posting based on the number of upvotes it secures, the number of comments it gets and the time that has elapsed since it was posted.
   
 On a different note, “Sentiment Analysis” is an integral part of the advanced field of Natural Language Processing. In short, you can think of it as—given a statement, predict what is the underlying sentiment and what’s the likelihood (probability) of that prediction.
@@ -24,11 +24,16 @@ Your task, should you choose to accept it, is: create a web-based application wh
     f. The computed sentiment for that article
   4. There should also be a facility for a “search” – wherein, the search term should provide a full-text search across the titles of ONLY the articles which have been fetched and stored previously.
 
-######################################################  
-Technology Used: 
- Front end: Html, Javascript, Bootstrap
- Backend: Python 2.7, Django 1.9.8, DjangoRestFramework
+#########################################################################################################################################
+
+##Technology Used:
+
+ **Front end:** Html, Javascript, Bootstrap
+ 
+ **Backend:** Python 2.7, Django 1.9.8, DjangoRestFramework
+ 
  Database: MongoDB(mongoengine ORM)
+ 
 ######################################################
 Application Overview:
   >A simple "topNewsApp" application that display the current top trending news from hacker news website(https://news.ycombinator.com/).

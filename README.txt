@@ -38,7 +38,6 @@ Application Overview:
   >Include one search box button on right top, that search the query by title using full text search technique and display the
     searchable result in ranking order wise.
   >After search, You can comeback to home page by click on home button then display all top news list.
-  >after running thr application browse the url "http://127.0.0.1:8000/hacker_news/top_news/" in your favourite browser.
 ######################################################
 Implementation Overview:
 > Used ajax for client server communication and callback function for sequentially ajax call.

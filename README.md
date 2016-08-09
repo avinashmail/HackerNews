@@ -36,22 +36,20 @@ Your task, should you choose to accept it, is: create a web-based application wh
 
   * A simple "topNewsApp" application that display the current top trending news from hacker news website(https://news.ycombinator.com/).
   * News title displayed as a clickable link and when user click on title then particular news link is open in new tab.
-  * Include one search box button on right top, that search the query by title using full text search technique and display the searchable result in ranking order wise.
-  * After search, You can comeback to home page by click on home button then display all top news list.
+  * Included one search box, that search the query by title using full text search technique and display the searchable result in ranking order wise.
+  * Home Button will navigate to home page.
 
 ##Implementation Overview:
 
   * Used ajax for client server communication and callback function for sequentially ajax call.
   * Used  built api from mashape for fetch the data from hacker news and for find sentiment of word.
   * There are following step that describe the implementation details.
-    1. Make an ajax call to mashape api to get the all current top news id.
-    2. Now create a restApi "TopNewsId" with route "get_top_news_id".
-    3. Make an ajax call using callback function "getNewTopNewsId()" to "TopNewsId" api for filter the news_id by news_id those are not already stored id in our database.
-    4. In this this Api get all the top_news_id as request data and in response send all those news id which are not stored in our database.
-    5. Now iterate the top_new_news_id(get in previous ajax call) and call to mashape api using callback function "allDetails" to get all the details of each news_id and another call to mashape api using callback function "getSentiment" for get the sentiment of news title.
-    6. Now in previous step we have all the details of new_news_id. Now call the "saveDetails" api to save all the details in our database.
-    7. After saving the details call the "DisplayNews" api that fetch all the details of top_nes_id from our database and send as response and after getting the response dynamically render the data with all top news title.
-    8. When search event call the "search_query" api that get all search result order of ranking (using mongodb full text search query) and render search result data in html page and click on home button again render top news data.
+    1. Make an ajax call to mashape api to get the all current top news id from Hacker News.
+    2. Make an ajax call with newsIds as data payload to django server to filter out exsiting news id.
+    3. Now iterate the left NewsIds(get in previous ajax call) and call to mashape api using callback function "allDetails" to get all the details of each news_id and another call to mashape api using callback function "getSentiment" for get the sentiment of news title.
+    4. Now in previous step we have all the details of new_news_id. Now call the django "saveDetails" api to save all the details in our database.
+    5. Make a call to django "DisplayNews" api that fetch all the details of top_news_id stored in database. After getting the response dynamically render the data with all top news title.
+    6. When search event call through the "search_query" api. That get all search result by order of ranking (using mongodb full text search query) and render search result data in html page.
 
 ##Improvement:
 

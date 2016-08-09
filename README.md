@@ -3,8 +3,9 @@
 
   HackerNews (HN) is an extremely popular news aggregator site (just in case you haven’t been there, do give it a try!).
   The way this site functions is pretty straight-forward:
-     ->people find interesting links
-     ->they post it on HN
+  
+  1. people find interesting links
+  2. they post it on HN
      ->others who like the content on the linked site upvote the posting and can also comment on it.
      ->there’s an algorithm which measures the “importance” of a posting based on the number of upvotes it secures, the
         number of comments it gets and the time that has elapsed since it was posted.

@@ -49,13 +49,13 @@ Implementation Overview:
       make ajax call using callback function "getNewTopNewsId()" to "TopNewsId" api for filter the news_id by news_id those are not
       already stored id in our database.
      In this this Api get all the top_news_id as request data and in response send all those news id which are not stored in our database.
-    >now iterate the top_new_news_id(get in previous ajax call) and call to mashape api using callback function "allDetails"
+    3>now iterate the top_new_news_id(get in previous ajax call) and call to mashape api using callback function "allDetails"
       to get all the details of each news_id and another call to mashape api using callback function "getSentiment" for get
       the sentiment of news title.
-    >Now in previous step we have all the details of new_news_id. Now call the "saveDetails" api to save all the details in our database.
-    > after saving the details call the "DisplayNews" api that fetch all the details of top_nes_id from our database and send as response.
+    4>Now in previous step we have all the details of new_news_id. Now call the "saveDetails" api to save all the details in our database.
+    5> after saving the details call the "DisplayNews" api that fetch all the details of top_nes_id from our database and send as response.
       and after getting the response dynamically render the data with all top news title.
-    >When search event call the "search_query" api that get all search result order of ranking (using mongodb full text search query)
+    6>When search event call the "search_query" api that get all search result order of ranking (using mongodb full text search query)
       and render search result data in html page and click on home button again render top news data.
 ######################################################
 Improvement:

@@ -9,11 +9,10 @@
   * Others who like the content on the linked site upvote the posting and can also comment on it.
   * There’s an algorithm which measures the “importance” of a posting based on the number of upvotes it secures, the number of comments it gets and the time that has elapsed since it was posted.
   
-  On a different note, “Sentiment Analysis” is an integral part of the advanced field of Natural Language Processing.
-  In short, you can think of it as—given a statement, predict what is the underlying sentiment and what’s the likelihood
-  (probability) of that prediction.
+On a different note, “Sentiment Analysis” is an integral part of the advanced field of Natural Language Processing. In short, you can think of it as—given a statement, predict what is the underlying sentiment and what’s the likelihood (probability) of that prediction.
 
-  Your task, should you choose to accept it, is: create a web-based application which fulfills the following functions:
+Your task, should you choose to accept it, is: create a web-based application which fulfills the following functions:
+
   1. Lists the currently top trending articles on HN.
   2. For each of the top articles, provides an additional visual aid which tells the viewer whether the article has a positive sentiment or not. To determine the sentiment, only consider the “Title” of the posting.
   3. Once fetched, the following attributes of the article should be stored, so that if the site were to be refreshed, any of the top articles already fetched won’t need to be fetched again:
